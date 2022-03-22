@@ -20,10 +20,16 @@
         └── makeKeyword.java
 ``` 
 
+## 인코딩
+
+**Encoding : UTF-8**
+
 ## 디렉토리 설명
 
 **src/scrips** : .java 소스 파일이 저장되는 디렉토리
+
 **bin/** : 컴파일된 .class 바이너리 파일이 저장되는 디렉토리
+
 **jars/** : 외부 jar 파일이 저장되는 디렉토리
 
 ## 컴파일 명령어

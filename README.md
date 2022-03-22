@@ -28,8 +28,12 @@
 
 ## 컴파일 명령어
 
-javac -cp jars/(외부 jar 파일 이름 1):(외부 jar 파일 이름 2):,,,, src/scripts/*.java (args 1) (args 2) ,,, (args n)
+javac -cp (외부 jar 파일 이름 1):(외부 jar 파일 이름 2):,,,, src/scripts/*.java -d bin
+
+ex) javac -cp jars/jsoup-1.13.1.jar:jars/kkma-2.1.jar src/scripts/*.java -d bin
 
 ## 실행 명령어
 
-java -cp ./jars/(외부 jar 파일 이름 1):(외부 jar 파일 이름 2):,,,,:bin scripts.kuir (args 1) (args 2) ,,, (args n)
+java -cp (외부 jar 파일 이름 1):(외부 jar 파일 이름 2):,,,,:bin scripts.kuir (args 1) (args 2) ,,, (args n)
+
+ex) java -cp ./jars/jsoup-1.13.1.jar:./jars/kkma-2.1.jar:bin scripts.kuir -c data

@@ -23,7 +23,7 @@ public class makeKeyword {
 	}
 
 	public void convertXml() {
-
+		System.out.println("3주차 실행완료");
 	}
 
 }

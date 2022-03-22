@@ -19,7 +19,7 @@ public class makeCollection {
 	}
 	
 	public void makeXml(){
-
-    }
+		System.out.println("2주차 실행완료");
+	}
 	
 }

@@ -1,5 +1,11 @@
 # 2022 오픈소스 SW 수업자료
 
+2022-1학기 건국대학교 오픈소스 SW 수업에서 사용하는 클래스 구조의 샘플 파일입니다.
+
+**kuir.java**가 프로젝트의 메인 소스 코드로 사용되고,
+
+주차별로 생성된 **makeCollection.java**, **makeKeyword.java** 파일을 메인 함수의 인자값(String[] args)에 따라 객체를 생성하고 함수를 실행합니다.
+
 ## 파일 구조
 
 ```bash
@@ -26,4 +32,4 @@ javac -cp jars/(외부 jar 파일 이름 1):(외부 jar 파일 이름 2):,,,, sr
 
 ## 실행 명령어
 
-java -cp ./jars/j(외부 jar 파일 이름 1):(외부 jar 파일 이름 2):,,,,:bin scripts.kuir (args 1) (args 2) ,,, (args n)
+java -cp ./jars/(외부 jar 파일 이름 1):(외부 jar 파일 이름 2):,,,,:bin scripts.kuir (args 1) (args 2) ,,, (args n)

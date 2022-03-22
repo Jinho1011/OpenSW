@@ -1,1 +1,2 @@
-# OpenSW_SampleProj
+# 2022 오픈소스 SW 수업자료
+

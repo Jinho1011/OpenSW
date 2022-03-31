@@ -9,7 +9,6 @@ import javax.xml.parsers.ParserConfigurationException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 
@@ -84,7 +83,7 @@ public class indexer {
                 result += id + " " + weight + " ";
             }
 
-//            System.out.println(key + " -> " + result);
+            System.out.println(key + " -> " + result);
 
             keywordHash.put(key, result);
 

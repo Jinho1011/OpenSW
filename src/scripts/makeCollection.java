@@ -52,6 +52,8 @@ public class makeCollection {
 				Element title = collection.addChild(doc, "title");
 				collection.addTextChild(title, titleData);
 
+				System.out.println();
+
 				Element body = collection.addChild(doc, "body");
 				collection.addTextChild(body, bodyData);
 			}

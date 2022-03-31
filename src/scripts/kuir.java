@@ -9,7 +9,6 @@ import java.io.IOException;
 public class kuir {
 
     public static void main(String[] args) throws IOException, TransformerException, ParserConfigurationException, SAXException {
-
         String command = args[0];
         String path = args[1];
 
@@ -22,6 +21,12 @@ public class kuir {
         } else if (command.equals("-i")) {
             indexer index = new indexer(path);
             index.makePost();
+        }else if (command.equals("-s")) {
+            String option = args[2];
+            String query = args[3];
+
+            searcher searcher = new searcher(path);
+
         }
     }
 }

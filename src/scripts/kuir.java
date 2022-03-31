@@ -8,7 +8,7 @@ import java.io.IOException;
 
 public class kuir {
 
-    public static void main(String[] args) throws IOException, TransformerException, ParserConfigurationException, SAXException {
+    public static void main(String[] args) throws IOException, TransformerException, ParserConfigurationException, SAXException, ClassNotFoundException {
         String command = args[0];
         String path = args[1];
 
@@ -23,9 +23,13 @@ public class kuir {
             index.makePost();
         }else if (command.equals("-s")) {
             String option = args[2];
-            String query = args[3];
+            if(option.equals("-q")) {
+                String query = args[3];
 
-            searcher searcher = new searcher(path);
+                searcher searcher = new searcher(path, query);
+                searcher.calcSim();
+            }
+
 
         }
     }
